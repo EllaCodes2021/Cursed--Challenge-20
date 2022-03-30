@@ -1,25 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 
-function NavTabs() {
+function NavTabs(props) {
   return (
     <header>
-      <h1 classname="logo">Ella Dutton</h1>
-      <nav classname="navbar">
+      <h1 className="logo">Ella Dutton</h1>
+      <nav className="navbar">
         <ul>
           <li>
-            <Link to="/">About Me</Link>
+            <a 
+            className={props.pageChoice == 'About' ? 'choice':('')}
+            onClick={()=> props.setPageChoice('About')} >About Me</a>
           </li>
           <li>
-            <Link to="/Resume">My Resume</Link>
+          <a 
+            className={props.pageChoice == 'Resume' ? 'choice':('')}
+            onClick={()=> props.setPageChoice('Resume')}>My Resume</a>
           </li>                    
           <li>
-            <Link to="/Projects">My Projects</Link>
-          </li>
-          <li>
-            <Link to="#contact-me">Contact Me</Link>
+          <a 
+            className={props.pageChoice == 'Projects' ? 'choice':('')}
+            onClick={()=> props.setPageChoice('Projects')}>My Projects</a>
           </li>
         </ul>
       </nav>

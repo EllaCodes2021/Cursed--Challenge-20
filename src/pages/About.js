@@ -1,9 +1,8 @@
 import React from 'react';
-import CSS from '../../images/logos/CSS.png'
-import HTML from '../../images/logos/HTML5.png'
-import JavaScript from '../../images/logos/JavaScript.png'
-import Sunset from '../../images/My-SRQ-Sunset_adobespark.png'
-import { Link } from 'react-router-dom';
+import CSS from '../images/logos/CSS.png'
+import HTML from '../images/logos/HTML5.png'
+import JavaScript from '../images/logos/JavaScript.png'
+import Sunset from '../images/My-SRQ-Sunset_adobespark.png'
 
 export default function Home() {
     return (
@@ -14,14 +13,14 @@ export default function Home() {
                         <h1>Coding Portfolio</h1>
                         <p>
                             Hi,  My name is Ella Dutton.  I am a student learning the Fullstack method of coding.  I want to find ways to make technology that is simple to use in and out of the field.  With over 20+ years of customer service.  I have taught computer classNamees for all ages and worked off customers feedback to improve their learning experience and to make technology less intimating.  I want to combine that experience with my coding to make programs that can help even the most novice and self-proclaimed "tech illiterate" person able to use it.  I enjoy taking photos of nature and exploring nature and enjoy learning about Agricultural technology.  I hope to work with technology that can improve farming.</p>
-                        <Link href="./assets/PDF/Ella's Resume 2021.html" className="btn btn-outline"> My Resume</Link>
+                        <a href="./assets/PDF/Ella's Resume 2021.html" className="btn btn-outline"> My Resume</a>
                         
                     </div>
                     
                 </div>
             </section>
             <section className="background bg-dark">
-                <img src={Sunset} alt="Sunset on the ocean" oncontextmenu="return false;"/>
+                <img src={Sunset} alt="Sunset on the ocean"/>
             </section>
             <section className="bg-light">
                 <div className="title bg-light">

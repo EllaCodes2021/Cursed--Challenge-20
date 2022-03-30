@@ -1,3 +1,8 @@
+import React from 'react';
+
+
+export default function Resume() {
+  return (
 <div>
     <h1>
       Ella Dutton
@@ -20,7 +25,9 @@
         941-248-9602
       </li>
       <li>
-        <Link href= 'https://atanime.herokuapp.com/'>https://atanime.herokuapp.com/ A class project to make a Full Stack app</Link> />
+        <a href= 'https://atanime.herokuapp.com/'>https://atanime.herokuapp.com/ A className project to make a Full Stack app</a> 
       </li>
     </ul>
 </div>
+  );
+}
